@@ -1,0 +1,84 @@
+Functions:
+
+Strings: 
+
+1. Lower()
+To comvert letters of strings to lowercase
+
+2. upper()
+To convert letters of strings to uppercase
+
+3. isupper() and islower()
+To check whether letters of strings are in loweecase or uppercase
+
+4. len()
+To check length of string
+
+5. index()
+By passing a parameter we can check at which index a certain item is in the string
+Exp: print(phrase.index("a"))
+
+6. replace()
+Used to replace one item or word with another in the string
+Exp: print(phrase.replace("Giraffe","Elephant"))
+Replaces Giraffe with Elephant.
+
+Numbers :
+
+7. abs()
+Gives absolute value of a number
+
+8. pow()
+Power function, we pass two values base and Power
+Exp: print(pow(3,4))
+3 is base and 4 is Power
+
+9. max()
+Tells highest number of inputs
+Exp: print(max(4,6))
+
+10. min()
+Tells lowest number of inputs
+Exp: print(min(4,6))
+
+11. round()
+Rounds float number
+Exp: print(round(3.2))
+Rounds 3.2 to 3
+
+12. floor()
+Outputs floor value
+Exp: print(floor(8.7))
+Output = 8
+
+13. ceil()
+Rounds the number up always
+Exp: print(ceil(3.2))
+output = 4
+
+14. sqrt()
+To find square root of a number.
+
+15. extend()
+appends lists together
+
+16. append()
+append some value at the end
+exp: list.append("Hello)
+
+17. insert()
+adds item at some location
+exp: list.insert(1,"Kevin")
+
+18. remove()
+removes item from the list
+list.remove("Kevin)
+
+19. clear()
+empties list 
+
+20. sort()
+sort lists in ascending order
+
+21. copy()
+copies lists
