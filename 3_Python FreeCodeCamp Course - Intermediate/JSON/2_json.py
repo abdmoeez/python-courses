@@ -14,10 +14,12 @@ def encode_user(o):
         raise TypeError('object of type is not json serializable')
 
 from json import JSONEncoder
-class UserEncoder(JSONEncoder):
-    if isinstance(o, User):
-        return {'name': o.name, 'age':o.age, o.__class__.__name__: True}
-    return JSONEncoder.default(self,o)
 
+class UserEncoder(JSONEncoder):
+    def default(self, o):
+        if isinstance(o, User):
+            return {'name': o.name, 'age':o.age, o.__class__.__name__: True}
+        return JSONEncoder.default(self,o)
+ 
 userjson = json.dumps(user, cls=UserEncoder )
 print(userjson)
